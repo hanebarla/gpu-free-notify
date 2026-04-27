@@ -75,3 +75,8 @@ process_count == 0
 
 一方、X serverやdisplay関係で常に少量のGPUメモリを使っている環境では、`100 MiB`だと厳しすぎることがあります。その場合は`500 MiB`から`1000 MiB`程度にするとよいです。
 
+## GPUをとりあえず動かすコード
+例：GPU0を5分間使用する場合
+```sh
+python gpu_busy_test.py --gpu 0 --seconds 300
+```
